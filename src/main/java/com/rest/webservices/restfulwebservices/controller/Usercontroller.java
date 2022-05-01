@@ -1,6 +1,6 @@
 package com.rest.webservices.restfulwebservices.controller;
 
-import com.rest.webservices.restfulwebservices.Dao.UserDaoService;
+import com.rest.webservices.restfulwebservices.service.UserService;
 import com.rest.webservices.restfulwebservices.exceptions.NoUserAvailableException;
 import com.rest.webservices.restfulwebservices.exceptions.UserNotFoundException;
 import com.rest.webservices.restfulwebservices.model.User;
@@ -17,13 +17,15 @@ import java.util.List;
 @RequestMapping("/users")
 public class Usercontroller {
 
+    //@Autowired
+    //UserDaoService userService;
     @Autowired
-    UserDaoService userService;
+    UserService userService;
 
     @GetMapping("/")
     public List<User> getAllUsers() throws NoUserAvailableException {
         log.info("Usercontroller.getAllUsers method is called");
-        return userService.findAll();
+        return userService.findAllUsers();
     }
 
     @PostMapping("/add")

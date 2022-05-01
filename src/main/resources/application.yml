@@ -5,3 +5,10 @@ spring:
     user:
       name: faheem
       password: abc123
+  jpa:
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
+

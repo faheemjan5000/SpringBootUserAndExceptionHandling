@@ -4,3 +4,15 @@
 /.project
 /target/
 /bin/
+/.idea/libraries/
+/.idea/workspace.xml
+/.idea/vcs.xml
+/.idea/uiDesigner.xml
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/jarRepositories.xml
+/.idea/encodings.xml
+/.idea/compiler.xml
+/HELP.md
+/restful-web-services.iml
+/.idea/.gitignore
